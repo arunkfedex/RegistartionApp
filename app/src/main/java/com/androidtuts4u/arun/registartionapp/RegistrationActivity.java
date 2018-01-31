@@ -46,9 +46,9 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 ContentValues values = new ContentValues();
                 values.put(UserDatabase.COLUMN_NAME_COL1, name);
-                values.put(UserDatabase.CLOMUMN_NAME_COL2, address);
+                values.put(UserDatabase.COLUMN_NAME_COL2, address);
                 values.put(UserDatabase.COLUMN_NAME_COL3, phone);
-                values.put(UserDatabase.COLUMN_NAME_COL_4, profession);
+                values.put(UserDatabase.COLUMN_NAME_COL4, profession);
                 long rowId = db.insert(UserDatabaseContract.UserDatabase.TABLE_NAME, null, values);
                 if (rowId != -1) {
                     Toast.makeText(RegistrationActivity.this, "User regstered succesfully", Toast.LENGTH_SHORT).show();
