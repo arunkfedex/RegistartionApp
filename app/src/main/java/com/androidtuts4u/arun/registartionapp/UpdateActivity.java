@@ -49,9 +49,9 @@ public class UpdateActivity extends AppCompatActivity {
             while (c1.moveToNext()) {
 
                 upName.setText(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL1)));
-                upAddress.setText(c1.getString(c1.getColumnIndex(UserDatabase.CLOMUMN_NAME_COL2)));
+                upAddress.setText(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL2)));
                 upPhone.setText(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL3)));
-                upProfession.setText(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL_4)));
+                upProfession.setText(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL4)));
 
             }
 
@@ -66,9 +66,9 @@ public class UpdateActivity extends AppCompatActivity {
 
                 ContentValues values = new ContentValues();
                 values.put(UserDatabase.COLUMN_NAME_COL1, name);
-                values.put(UserDatabase.CLOMUMN_NAME_COL2, address);
+                values.put(UserDatabase.COLUMN_NAME_COL2, address);
                 values.put(UserDatabase.COLUMN_NAME_COL3, phone);
-                values.put(UserDatabase.COLUMN_NAME_COL_4, profession);
+                values.put(UserDatabase.COLUMN_NAME_COL4, profession);
                 int updateId = db.update(UserDatabase.TABLE_NAME, values, UserDatabase._ID + " = " + rowId, null);
                 if (updateId != -1) {
 
