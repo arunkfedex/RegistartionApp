@@ -68,6 +68,7 @@ public class UserDetailsAdapter extends RecyclerView.Adapter<UserDetailsAdapter.
                         switch (item.getItemId()) {
                             case R.id.delete:
                                 db.delete(UserDatabase.TABLE_NAME,UserDatabase._ID + " = " + userId,null);
+                                notifyItemRangeChanged(position,userDetailsList.size());
                                 userDetailsList.remove(position);
                                 notifyItemRemoved(position);
                                 db.close();
