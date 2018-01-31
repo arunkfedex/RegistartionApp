@@ -40,9 +40,9 @@ public class UserDatabaseHelper extends SQLiteOpenHelper {
     private static final String CREATE_USER_TABLE = "CREATE TABLE " + UserDatabase.TABLE_NAME +
             "( " + UserDatabase._ID + " INTEGER PRIMARY KEY," +
             UserDatabase.COLUMN_NAME_COL1 + " text," +
-            UserDatabase.CLOMUMN_NAME_COL2 + " text," +
+            UserDatabase.COLUMN_NAME_COL2 + " text," +
             UserDatabase.COLUMN_NAME_COL3 + " text," +
-            UserDatabase.COLUMN_NAME_COL_4 + " text)";
+            UserDatabase.COLUMN_NAME_COL4 + " text)";
     private static final String DELETE_USER_TABLE = "DROP TABLE IF EXISTS " + UserDatabase.TABLE_NAME;
 
 }
