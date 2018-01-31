@@ -60,9 +60,9 @@ public class MainActivity extends AppCompatActivity {
 
                 userDetailsItem.setUserId(c1.getInt(c1.getColumnIndex(UserDatabase._ID)));
                 userDetailsItem.setName(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL1)));
-                userDetailsItem.setAddress(c1.getString(c1.getColumnIndex(UserDatabase.CLOMUMN_NAME_COL2)));
+                userDetailsItem.setAddress(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL2)));
                 userDetailsItem.setMobileNo(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL3)));
-                userDetailsItem.setProfessiion(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL_4)));
+                userDetailsItem.setProfessiion(c1.getString(c1.getColumnIndex(UserDatabase.COLUMN_NAME_COL4)));
                 userDetailsList.add(userDetailsItem);
 
 
